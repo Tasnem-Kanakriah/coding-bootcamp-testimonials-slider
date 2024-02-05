@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&display=swap');
+/* font-family: 'Diphylleia', serif;  this is for comment */ 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@700&display=swap');
+/* font-family: 'Noto Serif KR', serif; this is for name */
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+/* font-family: 'Zeyada', cursive; this is for job */
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(213, 195, 228, 0.514);
+    background-image: url(pattern-curve.svg);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: left;
+}
+.container {
+    width: 60vw;
+    height: 60vh;
+    background-color: rgba(213, 195, 228, 0.514);
+    border-radius: 8px;
+    box-shadow: 0 0 10px 10px rgba(195, 177, 199, 0.493);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimonial {
+    position: relative;
+    background-image: url(pattern-quotes.svg);
+    background-repeat: no-repeat;
+    background-position-x: 140px;
+    background-position-y: 120px;
+    width: 100%;
+    height: 100%;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+p {
+    font-size: 20px;
+    font-family: 'Diphylleia', serif; 
+    line-height: 40px;
+    font-weight: 600;
+}
+.person {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.name {
+    font-size: 28px;
+    font-weight: 900;
+    font-family: 'Noto Serif KR', serif;
+}
+.job {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: cursive;
+    color: #948f8f;
+}
+.img {
+    position: relative;
+    background-image: url(pattern-bg.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 80%;
+    margin-right: 50px;
+}
+.people {
+    position: absolute;
+    border-radius: 8px;
+    width: 320px;
+    height: 360px;
+    box-shadow: 0 0 10px 10px rgba(196, 167, 202, 0.493);
+    top: 44px;
+    left: 100px;
+}
+.arrows {
+    position: absolute;
+    top: 390px;
+    left: 140px;
+    width: 70px;
+    height: 34px;
+    background-color: white;
+    border-radius: 50px;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+.arrows img {
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+}
+
+@media (max-width : 500px) {
+    .container {
+        width: 100vw;
+        height: 100vh;
+        box-shadow: none;
+        flex-direction: column-reverse;
+    }
+    .testimonial {
+        padding: 20px;
+        height: 50%;
+        background-position-y: 0px;
+        background-position-x: 200px;
+        justify-content: start;
+    }
+    p {
+        font-size: 18px;
+        line-height: 30px;
+        padding: 20px;
+        text-align: center;
+    }
+    .person {
+        margin-top: 0;
+        padding: 0 20px;
+        flex-direction: column;
+    }
+    .img {
+        width: 80%;
+        height: 50%;
+        margin: 20px;
+    }
+    .people {
+        width: 280px;
+        height: 300px;
+        left: 70px;
+    }
+    .arrows {
+        top: 328px;
+        left: 175px;
+    }
+}
